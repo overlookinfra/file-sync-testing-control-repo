@@ -9,14 +9,10 @@ forge "http://forge.puppetlabs.com"
 
 
 # Additional modules to complement and complete a PE installation
-mod 'hunner/hiera',                     git: 'https://github.com/voxpupuli/puppet-hiera',                 tag: '2.0.1'
-mod 'puppetlabs/puppetserver_gem',      git: 'https://github.com/puppetlabs/puppetlabs-puppetserver_gem', tag: '0.2.0'
-mod 'puppetlabs/inifile',               git: 'https://github.com/puppetlabs/puppetlabs-inifile',          tag: '1.2.0'
-mod 'puppetlabs/concat',                git: 'https://github.com/puppetlabs/puppetlabs-concat',           tag: '2.1.0'
-mod 'puppetlabs/hocon',                 git: 'https://github.com/puppetlabs/puppetlabs-hocon',            tag: '0.9.4'
-mod 'puppetlabs/stdlib',                git: 'https://github.com/puppetlabs/puppetlabs-stdlib',           tag: '4.11.0'
-mod 'puppetlabs/vcsrepo',               git: 'https://github.com/puppetlabs/puppetlabs-vcsrepo',          tag: '1.3.2'
-mod 'puppet/archive',                   git: 'https://github.com/voxpupuli/puppet-archive',        tag: 'v0.5.1'
+# The all_envs.tgz should contain:
+# 'hunner/hiera', 'puppetlabs/puppetserver_gem', 'puppetlabs/inifile',
+# 'puppetlabs/concat', 'puppetlabs/hocon', 'puppetlabs/stdlib',
+# 'puppetlabs/vcsrepo', 'puppet/archive',
 mod 'npwalker/pe_code_manager_webhook', git: 'https://github.com/npwalker/pe_code_manager_webhook',       tag: '1.0.7'
 
 
@@ -64,29 +60,3 @@ mod 'elasticsearch/logstashforwarder', git: 'https://github.com/elastic/puppet-l
 mod 'puppetlabs/java',       git: 'https://github.com/puppetlabs/puppetlabs-java',       tag: '1.5.0'
 mod 'puppetlabs/java_ks',    git: 'https://github.com/puppetlabs/puppetlabs-java_ks',    tag: '1.4.1'
 
-
-# Basic Windows host management
-mod 'puppetlabs/acl',            git: 'https://github.com/puppetlabs/puppetlabs-acl',           tag: '1.1.2'
-mod 'puppetlabs/reboot',         git: 'https://github.com/puppetlabs/puppetlabs-reboot',        tag: '1.2.1'
-mod 'chocolatey/chocolatey',     git: 'https://github.com/chocolatey/puppet-chocolatey',        tag: '1.2.3'
-mod 'puppetlabs/powershell',     git: 'https://github.com/puppetlabs/puppetlabs-powershell',    tag: '2.0.1'
-mod 'puppetlabs/registry',       git: 'https://github.com/puppetlabs/puppetlabs-registry',      tag: '1.1.3'
-mod 'puppetlabs/wsus_client',    git: 'https://github.com/puppetlabs/puppetlabs-wsus_client',   tag: '1.0.2'
-mod 'badgerious/windows_env',    git: 'https://github.com/badgerious/puppet-windows-env',       tag: 'v2.2.2'
-mod 'puppet/windows_firewall',   git: 'https://github.com/voxpupuli/puppet-windows_firewall',   tag: 'v1.0.3'
-mod 'puppet/windows_autoupdate', git: 'https://github.com/voxpupuli/puppet-windows_autoupdate', tag: 'v1.1.0'
-mod 'puppet/dotnet',             git: 'https://github.com/voxpupuli/puppet-dotnet',             tag: 'v1.0.2'
-mod 'puppet/windowsfeature',     git: 'https://github.com/voxpupuli/puppet-windowsfeature',     tag: 'v1.1.0'
-mod 'puppet/windows_eventlog',   git: 'https://github.com/voxpupuli/puppet-windows_eventlog',   tag: 'v1.1.1'
-
-
-# Advanced Windows host management
-mod 'chocolatey/chocolatey_server', git: 'https://github.com/chocolatey/puppet-chocolatey_server',  tag: '0.0.4'
-# Not opensource
-#mod 'puppetlabs/sqlserver',         git: 'https://github.com/puppetlabs/puppetlabs-sqlserver',      tag: '1.1.2'
-mod 'puppet/iis',                   git: 'https://github.com/voxpupuli/puppet-iis',                 tag: 'v2.0.2'
-mod 'puppet/graphite_powershell',   git: 'https://github.com/voxpupuli/puppet-graphite_powershell', tag: 'v1.0.1'
-
-
-# And while we're at it, lets do this all in the cloud
-mod 'puppetlabs/aws', git: 'https://github.com/puppetlabs/puppetlabs-aws', tag: '1.4.0'
