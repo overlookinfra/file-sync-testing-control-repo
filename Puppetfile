@@ -9,14 +9,10 @@ forge "http://forge.puppetlabs.com"
 
 
 # Additional modules to complement and complete a PE installation
-mod 'hunner/hiera',                     git: 'https://github.com/voxpupuli/puppet-hiera',                 tag: '2.0.1'
-mod 'puppetlabs/puppetserver_gem',      git: 'https://github.com/puppetlabs/puppetlabs-puppetserver_gem', tag: '0.2.0'
-mod 'puppetlabs/inifile',               git: 'https://github.com/puppetlabs/puppetlabs-inifile',          tag: '1.2.0'
-mod 'puppetlabs/concat',                git: 'https://github.com/puppetlabs/puppetlabs-concat',           tag: '2.1.0'
-mod 'puppetlabs/hocon',                 git: 'https://github.com/puppetlabs/puppetlabs-hocon',            tag: '0.9.4'
-mod 'puppetlabs/stdlib',                git: 'https://github.com/puppetlabs/puppetlabs-stdlib',           tag: '4.11.0'
-mod 'puppetlabs/vcsrepo',               git: 'https://github.com/puppetlabs/puppetlabs-vcsrepo',          tag: '1.3.2'
-mod 'puppet/archive',                   git: 'https://github.com/voxpupuli/puppet-archive',        tag: 'v0.5.1'
+# The all_envs.tgz should contain:
+# 'hunner/hiera', 'puppetlabs/puppetserver_gem', 'puppetlabs/inifile',
+# 'puppetlabs/concat', 'puppetlabs/hocon', 'puppetlabs/stdlib',
+# 'puppetlabs/vcsrepo', 'puppet/archive',
 mod 'npwalker/pe_code_manager_webhook', git: 'https://github.com/npwalker/pe_code_manager_webhook',       tag: '1.0.7'
 
 
@@ -86,7 +82,3 @@ mod 'chocolatey/chocolatey_server', git: 'https://github.com/chocolatey/puppet-c
 #mod 'puppetlabs/sqlserver',         git: 'https://github.com/puppetlabs/puppetlabs-sqlserver',      tag: '1.1.2'
 mod 'puppet/iis',                   git: 'https://github.com/voxpupuli/puppet-iis',                 tag: 'v2.0.2'
 mod 'puppet/graphite_powershell',   git: 'https://github.com/voxpupuli/puppet-graphite_powershell', tag: 'v1.0.1'
-
-
-# And while we're at it, lets do this all in the cloud
-mod 'puppetlabs/aws', git: 'https://github.com/puppetlabs/puppetlabs-aws', tag: '1.4.0'
