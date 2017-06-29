@@ -50,7 +50,7 @@ mod 'jfryman/nginx',         git: 'http://github.com/jfryman/puppet-nginx',     
 mod 'puppetlabs/tomcat',     git: 'https://github.com/puppetlabs/puppetlabs-tomcat',     tag: '1.5.0'
 
 mod 'rtyler/jenkins',        git: 'https://github.com/jenkinsci/puppet-jenkins',         tag: 'v1.6.1'
-mod 'sensu/sensu',           git: 'https://github.com/sensu/sensu-puppet',               tag: '2.1.0'
+mod 'sensu/sensu',           git: 'https://github.com/sensu/sensu-puppet',               tag: 'v2.1.0'
 mod 'bfraser/grafana',       git: 'https://github.com/bfraser/puppet-grafana',           tag: 'v2.5.0'
 
 mod 'elasticsearch/elasticsearch',     git: 'https://github.com/elastic/puppet-elasticsearch',     tag: '0.11.0'
